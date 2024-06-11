@@ -1,0 +1,43 @@
+.tabs-wrap button {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   letter-spacing: 0.1px;
+   background-color: #fffbff;
+   color: #1d1b20;
+
+   padding: 10px 0;
+   flex: 0 0 33.333%;
+   @include transition;
+   cursor: pointer;
+
+   &:first-of-type {
+      border-radius: 100px 0 0 100px;
+      @include border(2px, #79747e);
+   }
+
+   &:nth-last-of-type(2) {
+      border-top: 2px solid #79747e;
+      border-bottom: 2px solid #79747e;
+   }
+
+   &:last-of-type {
+      border: 2px solid #79747e;
+      border-radius: 0 100px 100px 0;
+   }
+
+   & > img {
+      display: none;
+      margin-right: 4px;
+   }
+
+   &.active {
+      color: #1d192b;
+      background-color: #e8def8;
+
+      & > img {
+         display: inline;
+      }
+   }
+}

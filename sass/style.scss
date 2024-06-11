@@ -1,0 +1,49 @@
+@import 'reset';
+@import 'mixins';
+@import 'modal';
+
+input,
+button {
+   border: none;
+   outline: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.5px;
+   color: #49454f;
+   transition: 0.3s esea;
+}
+
+.container {
+   position: relative;
+   max-width: 580px;
+   margin: 0 auto;
+   padding: 45px 16px;
+   background-color: #fffbff;
+   border-radius: 8px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.day-of-week {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 25px;
+   margin-bottom: 4px;
+}
+
+.date-and-month {
+   font-size: 15px;
+   line-height: 19px;
+}
+
+h2 {
+   font-size: 20px;
+   font-weight: 500;
+   color: #1d1b1e;
+
+   line-height: 25px;
+}

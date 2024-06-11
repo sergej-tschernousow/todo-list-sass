@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="./plagins/airdatepicker/air-datepicker.css"
+      />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="overlay">
+         <button class="close">
+            <img class="close-btn" src="./img/icons/close.svg" alt="Close" />
+         </button>
+         <form class="editing-form">
+            <label class="label"
+               ><input type="text" placeholder="Описание"
+            /></label>
+
+            <label class="label">
+               <input
+                  type="text"
+                  name="date"
+                  id="airdatepicker"
+                  placeholder="Дата"
+            /></label>
+            <div class="form-buttons">
+               <input type="submit" value="Исправить" class="add" />
+               <input type="button" value="Отменить и закрыть" class="cancel" />
+            </div>
+         </form>
+      </div>
+      <div class="container">
+         <button class="menu-btn">
+            <img src="./img/icons/edit-menu.svg" alt="Menu" />
+         </button>
+         <div class="date"></div>
+         <form class="search">
+            <input
+               type="search"
+               name="search"
+               id="search"
+               placeholder="Поиск"
+            />
+            <button class="search-btn">
+               <img src="./img/icons/search-icon.svg" alt="search" />
+            </button>
+            <ul class="search-list"></ul>
+         </form>
+         <h2>Новая запись</h2>
+         <form class="adding-task">
+            <label class="label"
+               ><input type="text" placeholder="Описание"
+            /></label>
+
+            <label class="label">
+               <input
+                  type="text"
+                  name="date"
+                  id="airdatepicker1"
+                  placeholder="Дата"
+            /></label>
+
+            <div class="form-buttons">
+               <input type="submit" value="Добавить" class="add" />
+               <input type="button" value="Очистить" class="reset" />
+            </div>
+         </form>
+         <h2>Список дел</h2>
+         <div class="tabs-wrap">
+            <button class="tabs-btn active" value="all">
+               <img
+                  src="./img/icons/button-active.svg"
+                  alt="Active button"
+               />Все
+            </button>
+            <button class="tabs-btn" value="planned">
+               <img
+                  src="./img/icons/button-active.svg"
+                  alt="Active button"
+               />Активные
+            </button>
+            <button class="tabs-btn" value="completed">
+               <img
+                  src="./img/icons/button-active.svg"
+                  alt="Active button"
+               />Завершенные
+            </button>
+         </div>
+         <ul class="todo-list"></ul>
+      </div>
+      <script src="./plagins/airdatepicker/air-datepicker.js"></script>
+
+      <script src="./script.js"></script>
+   </body>
+</html>

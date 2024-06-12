@@ -1,11 +1,11 @@
-// new AirDatepicker('#airdatepicker', {
-//    position: 'top left',
-//    timepicker: true
-// });
-// new AirDatepicker('#airdatepicker1', {
-//    position: 'top left',
-//    timepicker: true
-// });
+new AirDatepicker('#airdatepicker', {
+   position: 'top left',
+   timepicker: true
+});
+new AirDatepicker('#airdatepicker1', {
+   position: 'top left',
+   timepicker: true
+});
 const date = new Date();
 const DAY_OF_WEEK = [
    'Воскресенье',

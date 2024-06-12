@@ -1,0 +1,38 @@
+@media screen and (max-width: 425px) {
+   .menu-btn {
+      display: flex;
+   }
+
+   .adding-task {
+      display: none;
+      position: fixed;
+      width: 90%;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+   }
+
+   .tabs-wrap {
+      & button {
+         font-size: 12px;
+         font-weight: 500;
+         &.active {
+            & > img {
+               display: none;
+            }
+         }
+      }
+   }
+
+   .editing-form {
+      width: 320px;
+      & .add {
+         margin-bottom: 10px;
+      }
+   }
+
+   .title {
+      display: none;
+   }
+}

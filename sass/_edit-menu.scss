@@ -1,0 +1,60 @@
+.edit-menu {
+   position: absolute;
+   top: 50%;
+   right: 25px;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: translateY(-50%);
+   cursor: pointer;
+   @include transition(0.1s);
+   transition: 0.1s ease;
+
+   & > button {
+      display: flex;
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      @include border(2px, #1d192b8b);
+      // border: 2px solid #1d192b8b;
+      opacity: 0;
+      background-color: #fdfcfc;
+
+      & > img {
+         pointer-events: none;
+      }
+   }
+
+   &:hover {
+      & .delete,
+      & .edit-task {
+         display: flex;
+         opacity: 1;
+      }
+   }
+}
+
+.delete {
+   top: -65%;
+   left: -100%;
+   transition: opacity 0.5s ease;
+}
+
+.edit-task {
+   bottom: -65%;
+   left: -100%;
+   transition: opacity 0.5s ease;
+}
+
+.delete,
+.edit-task {
+   &:hover {
+      box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
+   }
+}

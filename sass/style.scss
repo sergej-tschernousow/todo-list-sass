@@ -4,7 +4,11 @@
 @import 'search';
 @import 'editing-form';
 @import 'tabs-section';
-@import 'todo-list' input, button {
+@import 'todo-list';
+@import 'edit-menu';
+
+input,
+button {
    border: none;
    outline: none;
    font-family: 'Open Sans', sans-serif;

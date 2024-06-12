@@ -1,0 +1,52 @@
+.todo-list {
+   & > li {
+      position: relative;
+      background-color: #6750a40d;
+      padding: 8px 12px 8px 8px;
+      border-radius: 16px;
+      display: flex;
+      gap: 16px;
+      justify-content: start;
+      align-items: center;
+
+      &:not(:last-of-type) {
+         margin-bottom: 12px;
+      }
+
+      &.checked {
+         & > .list-item {
+            color: #1d1b1e80;
+         }
+         & p {
+            &p:last-of-type {
+               text-decoration: line-through;
+            }
+         }
+      }
+   }
+
+   & [type='checkbox'] {
+      accent-color: #d0bcff;
+      margin-left: 8px;
+      zoom: 1.5;
+   }
+}
+
+.list-item {
+   & p {
+      &:first-of-type {
+         font-size: 14px;
+      }
+      &:last-of-type {
+         font-size: 16px;
+      }
+   }
+}
+
+.edit-wrap {
+   position: absolute;
+   top: 50%;
+   right: 25px;
+   transform: translateY(-50%);
+   cursor: pointer;
+}

@@ -2,11 +2,9 @@
 @import 'mixins';
 @import 'modal';
 @import 'search';
-@import 'eediting-form';
+@import 'editing-form';
 @import 'tabs-section';
-
-input,
-button {
+@import 'todo-list' input, button {
    border: none;
    outline: none;
    font-family: 'Open Sans', sans-serif;

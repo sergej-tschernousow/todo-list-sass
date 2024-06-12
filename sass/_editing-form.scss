@@ -39,7 +39,7 @@
       padding: 12px;
       background-color: #fffbff;
       border-radius: 4px;
-      @include border(2px, #79747e);
+      @include border;
       @include transition;
    }
 }
@@ -82,7 +82,7 @@
 .cancel {
    background-color: #fffbff;
    color: #6750a4;
-   border: 2px solid #79747e;
+   @include border;
    &:hover {
       border-color: #6750a4;
       box-shadow: 0 0 4px #1d192b;

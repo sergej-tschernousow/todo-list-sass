@@ -17,7 +17,7 @@
 
       &:first-of-type {
          border-radius: 100px 0 0 100px;
-         @include border(2px, #79747e);
+         @include border;
       }
 
       &:nth-last-of-type(2) {
